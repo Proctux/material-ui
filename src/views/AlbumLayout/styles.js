@@ -27,25 +27,30 @@ export default makeStyles(theme => ({
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: theme.spacing(2),
   },
   navContainer: {
     flex: 1,
   },
   navItemContainer: {
-    marginBottom: theme.spacing(3),
+    padding: theme.spacing(2),
+    '&:hover': {
+      backgroundColor: theme.palette.primary.redLightest,
+      '& .MuiSvgIcon-root': {
+        color: theme.palette.primary.main,
+      },
+      '& .MuiLink-root': {
+        color: theme.palette.primary.main,
+      },
+    }
   },
   settings: {
-    opacity: 0.6,
-    color: 'black',
-    fontWeight: 500,
-    textDecoration: 'none',
+    paddingLeft: theme.spacing(3),
   },
   logoutButton: {
-    marginTop: theme.spacing(3),
-    padding: 0,
-    opacity: 0.6,
     fontWeight: 500,
+    color: theme.palette.custom.gray64,
+    textTransform: 'none',
+    padding: theme.spacing(3),
     '& .MuiButton-label': {
       padding: 0,
       justifyContent: 'flex-start',

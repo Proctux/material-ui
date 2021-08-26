@@ -74,7 +74,7 @@ export default function Album() {
                   ))}
                 </Grid>
                 <Grid>
-                  <NavOption textClassName={styles.settings}  title="Settings" link="https://material-ui.com/"/>
+                  <NavOption textClassName={styles.settings} title="Settings" link="https://material-ui.com/"/>
                   <Button className={styles.logoutButton}>Logout</Button>
                 </Grid>
               </Grid>
